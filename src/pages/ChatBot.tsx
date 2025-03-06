@@ -45,7 +45,7 @@ async function fetchData(user_message: string): Promise<string> {
     const url = "https://api.awanllm.com/v1/completions"; // Replace with your actual API URL
 
     const payload = {
-      model: `${llm_model}`,
+      model: llm_model,
       prompt: user_message,
       repetition_penalty: 1.1,
       temperature: 0.7,
